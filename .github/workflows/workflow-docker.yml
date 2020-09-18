@@ -1,4 +1,5 @@
 on: [push]
+name: 'Hello world from docker'
 
 jobs:
   hello_world_job:
