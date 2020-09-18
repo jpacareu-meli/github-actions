@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: jpacareu-meli/github-action-javascript@v1
+      uses: jpacareu-meli/github-action-javascript@v2
       with:
         whotogreet: 'Paca'
     # Use the output from the `hello` step
