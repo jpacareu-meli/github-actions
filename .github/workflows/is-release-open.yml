@@ -1,8 +1,11 @@
-on: [push, pull_request]
+on:
+  pull_request:
+    types:
+      - open
+  push:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
       - name: Check opened release
-        uses: jpacareu-meli/is-release-open@master
+        uses: jpacareu-meli/is-release-open-action@v1
