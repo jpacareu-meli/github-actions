@@ -1,0 +1,11 @@
+on:
+  pull_request:
+    types:
+      - open
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check opened release
+        uses: jpacareu-meli/is-release-open@v1
