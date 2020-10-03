@@ -1,8 +1,4 @@
-on:
-  pull_request:
-    types:
-      - open
-  push:
+on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
