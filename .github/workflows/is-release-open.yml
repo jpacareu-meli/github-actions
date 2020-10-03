@@ -4,4 +4,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check opened release
-        uses: jpacareu-meli/is-release-open@v1
+        uses: jpacareu-meli/is-release-open@v2
