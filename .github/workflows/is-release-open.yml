@@ -1,6 +1,6 @@
 on:
   pull_request:
-    type:
+    types:
       - opened
     branches:
       - 'backport/master_**'
