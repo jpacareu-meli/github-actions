@@ -5,7 +5,7 @@ on:
     branches:
       - "develop"
 jobs:
-  if: ${{ contains(github.head_ref, 'backport/master_') }}
+  if: contains(github.head_ref, 'backport/master_')
   build:
     runs-on: ubuntu-latest
     steps:
