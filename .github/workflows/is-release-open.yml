@@ -1,7 +1,5 @@
 on:
   pull_request:
-    types:
-      - opened
     branches:
       - 'backport/master_**'
 jobs:
