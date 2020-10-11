@@ -3,10 +3,10 @@ on:
     types:
       - opened
     branches:
-      - "develop"
+      - 'develop'
 jobs:
-  if: github.event_name == 'pull_request'
   build:
+    if: contains(github.head_ref, 'backport/master_')
     runs-on: ubuntu-latest
     steps:
       - name: Check opened release
