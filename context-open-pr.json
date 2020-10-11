@@ -1,0 +1,66 @@
+{
+  "payload": {
+    "action": "opened",
+    "number": 14,
+    "pull_request": {
+      "_links": {
+        "comments": {
+          "href": "https://api.github.com/repos/jpacareu-meli/github-actions/issues/14/comments"
+        },
+        "commits": {
+          "href": "https://api.github.com/repos/jpacareu-meli/github-actions/pulls/14/commits"
+        },
+        "html": {
+          "href": "https://github.com/jpacareu-meli/github-actions/pull/14"
+        },
+        "issue": {
+          "href": "https://api.github.com/repos/jpacareu-meli/github-actions/issues/14"
+        },
+        "review_comment": {
+          "href": "https://api.github.com/repos/jpacareu-meli/github-actions/pulls/comments{/number}"
+        },
+        "review_comments": {
+          "href": "https://api.github.com/repos/jpacareu-meli/github-actions/pulls/14/comments"
+        },
+        "self": {
+          "href": "https://api.github.com/repos/jpacareu-meli/github-actions/pulls/14"
+        },
+        "statuses": {
+          "href": "https://api.github.com/repos/jpacareu-meli/github-actions/statuses/9fc4daa0ae72368f5b89c816a9fe0d43c8276ab8"
+        }
+      },
+      "active_lock_reason": null,
+      "additions": 22,
+      "assignee": null,
+      "assignees": [],
+      "author_association": "OWNER",
+      "base": {
+        "label": "jpacareu-meli:develop",
+        "ref": "develop",
+        "repo": {
+          "allow_merge_commit": true,
+          "allow_rebase_merge": true,
+          "allow_squash_merge": true,
+          "archive_url": "https://api.github.com/repos/jpacareu-meli/github-actions/{archive_format}{/ref}",
+          "archived": false,
+          "assignees_url": "https://api.github.com/repos/jpacareu-meli/github-actions/assignees{/user}",
+          "blobs_url": "https://api.github.com/repos/jpacareu-meli/github-actions/git/blobs{/sha}",
+          "branches_url": "https://api.github.com/repos/jpacareu-meli/github-actions/branches{/branch}",
+          "clone_url": "https://github.com/jpacareu-meli/github-actions.git",
+      "site_admin": false,
+      "starred_url": "https://api.github.com/users/jpacareu-meli/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jpacareu-meli/subscriptions",
+      "type": "User",
+      "url": "https://api.github.com/users/jpacareu-meli"
+    }
+  },
+  "eventName": "pull_request",
+  "sha": "22ffe04f947917251a2074008fe821eec378b26d",
+  "ref": "refs/pull/14/merge",
+  "workflow": ".github/workflows/is-release-open.yml",
+  "action": "jpacareu-meliis-release-open-action",
+  "actor": "jpacareu-meli",
+  "job": "build",
+  "runNumber": 25,
+  "runId": 300657944
+}

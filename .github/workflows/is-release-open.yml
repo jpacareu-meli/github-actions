@@ -3,10 +3,13 @@ on:
     types:
       - opened
     branches:
-      - 'develop'
+      - "develop"
 jobs:
+  if: ${{ contains(github.head_ref, 'backport/master_') }}
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Check opened release
         uses: jpacareu-meli/is-release-open-action@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
