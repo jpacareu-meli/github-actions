@@ -5,7 +5,7 @@ on:
     branches:
       - "develop"
 jobs:
-  if: contains(github.head_ref, 'backport/master_')
+  if: github.event_name == 'pull_request'
   build:
     runs-on: ubuntu-latest
     steps:
