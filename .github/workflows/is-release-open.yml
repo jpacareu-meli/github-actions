@@ -6,7 +6,7 @@ on:
       - 'develop'
 jobs:
   build:
-    if: contains(github.head_ref, 'backport/master_')
+    if: contains(github.head_ref, 'backport/mastser_')
     runs-on: ubuntu-latest
     steps:
       - name: Check opened release
