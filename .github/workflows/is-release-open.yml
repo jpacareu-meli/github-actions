@@ -2,7 +2,8 @@ on:
   pull_request:
     types:
       - open
-  push:
+    branch:
+      - 'backport/master_**'
 jobs:
   build:
     runs-on: ubuntu-latest
