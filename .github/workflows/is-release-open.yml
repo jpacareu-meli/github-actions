@@ -9,7 +9,7 @@ jobs:
     if: contains(github.head_ref, 'backport/master_')
     runs-on: ubuntu-latest
     steps:
-      - name: Check opened release
+      - name: Check opened releases
         uses: jpacareu-meli/is-release-open-action@v5
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
