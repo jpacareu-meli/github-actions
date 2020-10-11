@@ -1,6 +1,7 @@
 on:
   pull_request:
-    types: [opened, reopened]
+    branches:
+      - "backport/master_**"
 jobs:
   build:
     runs-on: ubuntu-latest
