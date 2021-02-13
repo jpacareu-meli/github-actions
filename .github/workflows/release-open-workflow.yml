@@ -1,0 +1,13 @@
+name: 'Auto Assign Reviewers'
+on:
+  pull_request:
+    types:
+      - opened
+jobs:
+  check-release:
+    if: contains(github.head_ref, 'feature/') || contains(github.head_ref, 'hotfix/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jpacareu-meli/is-release-open-action@v1.0.0
+        with:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
