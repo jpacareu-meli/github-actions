@@ -8,6 +8,7 @@ jobs:
     if: contains(github.head_ref, 'feature/') || contains(github.head_ref, 'hotfix/')
     runs-on: ubuntu-latest
     steps:
-      - uses: jpacareu-meli/is-release-open-action@v1.0.0
+      - uses: jpacareu-meli/is-release-open-action@v1.0
+        name: Has release opened?
         with:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
